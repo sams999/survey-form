@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+} 
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: #1b1b32;
+  color: #FFF99F;
+  font-family: Tahoma, sans-serif;
+  font-size: 16px;
+  overflow: auto;
+  background-image: linear-gradient(
+      115deg,
+      rgba(244, 224, 174, 0.4),
+      rgba(42, 4, 52, 0.5)), url(https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg?auto=compress&cs=tinysrgb&w=400);
+  background-size: contain;
+}
+
+h1, #description {
+  margin: 1em auto 0;
+  text-align: center;
+}
+
+#description {
+  margin: 5px auto;
+}
+
+.container {
+  margin: 20px;
+}
+
+form {
+  width: 60vw;
+  max-width: 800px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 5px 50px;
+  background-color: rgba(93, 62, 9, 0.4);
+}
+
+.form-group {
+  margin: 1em auto;
+}
+
+header {
+  margin: 30px;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+#dropdown,
+.number-age,
+#name,
+#email {
+  height: 2rem;
+  width: 100%;
+}
+
+textarea {
+  display: inline;
+  width: 100%;
+  height: 100px;
+}
+
+.text {
+  margin: 20px 0 0
+}
+
+.submit-button {
+  margin: 20px auto;
+  display: inline;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: #623b06;
+  background-color: #FFF99F;
+}

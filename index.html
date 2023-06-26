@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Employee Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve our workplace!</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Email address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">
+          Age <span class="clue">(optional)</span>
+        </label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control number-age"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Driver</option>
+          <option value="job">Assembly line worker</option>
+          <option value="learner">Management</option>
+          <option value="learner">Custodial</option>
+          <option value="learner">R & D</option>
+          <option value="learner">Marketing</option>
+          <option value="learner">Human resources</option>
+          <option value="other">Other</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Are you happy with your job?</p>
+        <label for=""><input type="radio" class="input-radio inline" name="input-radio" value="yes" checked id="" />Yes</label>
+        <label for=""><input type="radio" class="input-radio inline" name="input-radio" value="no" id="" />No</label>
+      </div>
+      <div>
+        <p>Which areas can we improve upon? (check all that apply)</p>
+        <label for="cafeteria" class="checkbox-align"><input type="checkbox" name="cafeteria" value="a" class="input-checkbox inline" id="cafeteria" />Employee cafeteria</label>
+        <label for="gym" class="checkbox-align"><input type="checkbox" name="gym" value="gym" class="input-checkbox inline" id="gym" />Fitness center</label>
+        <label for="promotions" class="checkbox-align"><input type="checkbox" name="promotions" value="promotions" class="input-checkbox inline" id="promotions" />Promotion assessments</label>
+        <label for="vacation" class="checkbox-align"><input type="checkbox" name="vacation" value="b" class="input-checkbox inline" id="vacation" />More paid holidays</label>
+        <label for="scholarship" class="checkbox-align"><input type="checkbox" name="scholarship" value="b" class="input-checkbox inline" id="scholarship" />Continuing education assistance</label>
+        <label for="hours" class="checkbox-align"><input type="checkbox" name="hours" value="hours" class="input-checkbox inline" id="hours" />Shorter hours</label>
+      </div>
+      <div class="form-control text">
+        <p>Do you have any additional comments? (optional)</p>
+        <textarea class="input-textarea" name="comments" id="comments" placeholder="Leave comments here..."></textarea>
+      </div> 
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </form>
+  </div>
+</body>
+</html>
