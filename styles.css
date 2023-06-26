@@ -14,7 +14,7 @@ body {
       115deg,
       rgba(244, 224, 174, 0.4),
       rgba(42, 4, 52, 0.5)), url(https://images.pexels.com/photos/1212600/pexels-photo-1212600.jpeg?auto=compress&cs=tinysrgb&w=400);
-  background-size: contain;
+  background-size: cover;
 }
 
 h1, #description {
